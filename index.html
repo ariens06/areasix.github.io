@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>Area Six</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 116%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Cursive", Cursive}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("IMG_4191.jpg");
+  min-height: 100%;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 5px black, 0 0 25px blue, 0 0 5px darkblue;
+  border:2px solid #Cb4154;
+  
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-large">Girls Bar AREA 6で、楽しいひとときをお過ごしください。</span>
+  </div>
+  
+ 
+  
+   <div class="w3-display-absolute w3-center w3-padding-24">
+   
+   <span class="w3-text-white w3-hide-small"  style="font-size:110px" > GIRLS BAR <br>AREA 6</span><br>
+   <span class="w3-button w3-xlarge w3-black" style="border: 2px solid Violet" >1SET-60min　￥75,000～</span>
+		  
+  </div>
+
+	
+</header>
+
+<!-- Menu Container -->
+ <a href="javascript:void(0)" onclick="openMenu(event, 'menu');"> 
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge"  id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px" >MENU</h1> 
+    <div class="w3-row w3-center w3-border w3-border-dark-grey"> 
+     
+	 <a href="javascript:void(0)" onclick="openMenu(event, 'Course');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Course</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Salads');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+      </a>
+		
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Drinks</div>
+      </a>
+    </div>
+    
+    <div id="Course" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">￥1250</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+   
+      <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">￥1550</span></h1>
+      <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      
+      <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">￥1700</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+      <hr>
+
+      <h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">￥1650</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+
+      <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">￥2000</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <hr>
+
+      <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">￥2150</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+    </div>
+
+    <div id="Salads" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Caeser Salad</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">￥1350</span></h1>
+      <p class="w3-text-grey">romaine lettuce, Parmesan cheese, croutons</p>
+      <hr>
+   
+      <h1><b>Tofu Seaweed Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">￥1450</span></h1>
+      <p class="w3-text-grey">tofu, seaweed, green vegetables</p>
+      <hr>
+      
+      <h1><b>Hotate Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">￥1600</span></h1>
+      <p class="w3-text-grey">daikon, scallops, mayonnaise, lemon juice and chives</p>
+      <hr>
+
+      <h1><b>Kani Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">￥1600</span></h1>
+      <p class="w3-text-grey">shredded crab, cucumber, mayonnaise,breadcrumps</p>
+    </div>
+
+
+    <div id="Drinks" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Grape juice</b> <span class="w3-tag w3-grey w3-round">seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">￥550</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+   
+      <h1><b>Orange juice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">￥650</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1><b>Cocacola</b> <span class="w3-right w3-tag w3-dark-grey w3-round">￥850</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1><b>Apple juice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">￥950</span></h1>
+      <p class="w3-text-grey"></p>
+    </div><br>
+  
+  
+  </div>
+</div>
+</a>
+-->
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+   
+    <img src="photo1.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+	    
+    <h1><b>SERVICES</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>50min 飲み放題 ¥2,500<br></br>
+		営業時間：19:00〜1:00<br></br>
+		カラオケ無料。フード有<br></br>
+		カード可
+		Visa・JCB・Mastercard・AmericanExpress・DinersClub<br></br>
+		QR決済可サービス料別途</p>
+       
+             </div>
+            </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="map1.jpg" class="w3-image w3-greyscale" style=" width:100%" style="position:relative" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Shop INFO</h1>
+    <p><strong>会社名 ：</strong>株式会社 Girls Bar Area 6<br /><strong>場所 ：</strong>東京都新宿区西新宿七丁目９番１５号<br /><strong>営業時間 ：</strong>19:00～1:00
+日祝 営業<br /><strong>アクセス：</strong>大江戸線麻布十番駅　徒歩2分 <br/> <span style="white-space: pre">                 南北腺 麻布十番駅　徒歩5分 </span> <br /><strong>代表取締役 ：</strong>Tazoe Masanori<br /></p></div>
+				</div>
+	 <p class="w3-xxlarge"><strong>お問い合わせ</strong> </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="氏名" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="人数" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="日時" required name="date" </p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="メッセージ" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p> All Rights Reserved.	</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
